@@ -1,10 +1,12 @@
-let read = require('readline-sync'); 
+let word;
+let words;
+
+words = prompt('Enter a word'); 
+
 words = []
-console.log("Enter words one by one (Enter \"stop\" to exit the input):");
-word = read.question("");
 while(word.toLowerCase() != "stop") {
 	words.push(word); 
-	word = read.question(""); 
+	word = prompt("Enter another word"); 
 }
 if(words.length > 0)
 	console.log("You entered the following words: "+words.join(" "));

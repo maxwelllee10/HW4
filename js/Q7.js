@@ -3,7 +3,7 @@ let randomNum = Math.floor(Math.random() * 100 + 1);
       let totalGuess = 1;
     
 
-      document.getElementById("button").onclick = function () {
+      document.getElementById("button") = function () {
         let userEnteredValue = document.getElementById("userInput").value;
 
         if (userEnteredValue == randomNum) {

@@ -1,7 +1,7 @@
-function countVowel(string) {
+function countVowel(str) {
     const vowels = ["a", "e", "i", "o", "u"]
     let count = 0;
-    for (let letter of string.toLowerCase()) {
+    for (let letter of str.toLowerCase()) {
         if (vowels.includes(letter)) {
             count++;
         }
@@ -18,7 +18,7 @@ function checkPalindrome(string) {
     return 'and is a palindrome';
 }
 function myFunction() {
-  let input = prompt("Enter a word", "Madam");
+  let input = prompt("Enter a word");
   if (input != null) {
     document.getElementById("demo").innerHTML =
     input+" contains " + countVowel(input)+" vowels "+ checkPalindrome(input.toLowerCase());
